@@ -1,0 +1,634 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov 16 01:31:14 2023
+# Process ID: 11739
+# Current directory: /home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.runs/synth_1
+# Command line: vivado -log user_project_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source user_project_wrapper.tcl
+# Log file: /home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.runs/synth_1/user_project_wrapper.vds
+# Journal file: /home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.runs/synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2419.200 MHz, CPU Physical cores: 10, Host memory: 10422 MB
+#-----------------------------------------------------------
+source user_project_wrapper.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental /home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/utils_1/imports/synth_1/user_proj_example.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/utils_1/imports/synth_1/user_proj_example.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top user_project_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11760
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:64]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:70]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:76]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:857]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:861]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:867]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:870]
+WARNING: [Synth 8-9887] parameter declaration becomes local in 'fir' with formal parameter declaration list [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:873]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2904.082 ; gain = 0.000 ; free physical = 2010 ; free virtual = 5165
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'user_project_wrapper' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_wrapper.v:31]
+INFO: [Synth 8-6157] synthesizing module 'WBdecoder' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_WBdec.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WBdecoder' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_WBdec.v:3]
+INFO: [Synth 8-6157] synthesizing module 'WB2AXI' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_WBtoAXI.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'WB2AXI' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_WBtoAXI.v:3]
+INFO: [Synth 8-6157] synthesizing module 'fir' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:914]
+INFO: [Synth 8-226] default block is never used [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1349]
+INFO: [Synth 8-6155] done synthesizing module 'fir' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:2]
+INFO: [Synth 8-6157] synthesizing module 'bram11' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/bram11.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'bram11' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/bram11.v:3]
+INFO: [Synth 8-6157] synthesizing module 'user_proj_example' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_proj_example.counter.v:38]
+INFO: [Synth 8-6157] synthesizing module 'bram' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'bram' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/bram.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'user_proj_example' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_proj_example.counter.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'user_project_wrapper' (0#1) [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_wrapper.v:31]
+WARNING: [Synth 8-3848] Net ss_tlast in module/entity WB2AXI does not have driver. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_project_WBtoAXI.v:42]
+WARNING: [Synth 8-3848] Net ap_res_reg in module/entity fir does not have driver. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:123]
+WARNING: [Synth 8-3848] Net ap_res_reg_en in module/entity fir does not have driver. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:123]
+WARNING: [Synth 8-3848] Net la_data_out in module/entity user_proj_example does not have driver. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_proj_example.counter.v:61]
+WARNING: [Synth 8-3848] Net irq in module/entity user_proj_example does not have driver. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/user_proj_example.counter.v:70]
+WARNING: [Synth 8-7129] Port A0[31] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[30] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[29] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[28] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[27] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[26] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[25] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[24] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[23] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[22] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[21] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[20] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[19] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[18] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[17] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[16] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[15] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[14] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[13] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[12] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[11] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0[10] in module bram is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[127] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[126] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[125] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[124] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[123] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[122] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[121] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[120] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[119] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[118] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[117] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[116] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[115] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[114] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[113] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[112] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[111] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[110] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[109] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[108] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[107] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[106] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[105] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[104] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[103] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[102] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[101] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[100] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[99] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[98] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[97] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[96] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[95] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[94] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[93] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[92] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[91] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[90] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[89] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[88] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[87] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[86] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[85] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[84] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[83] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[82] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[81] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[80] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[79] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[78] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[77] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[76] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[75] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[74] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[73] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[72] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[71] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[70] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[69] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[68] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[67] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[66] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[65] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[64] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[63] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[62] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[61] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[60] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[59] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[58] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[57] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[56] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[55] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[54] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[53] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[52] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[51] in module user_proj_example is either unconnected or has no load
+WARNING: [Synth 8-7129] Port la_data_out[50] in module user_proj_example is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2904.082 ; gain = 0.000 ; free physical = 3084 ; free virtual = 6239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2904.082 ; gain = 0.000 ; free physical = 3051 ; free virtual = 6206
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2904.082 ; gain = 0.000 ; free physical = 3051 ; free virtual = 6206
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2904.082 ; gain = 0.000 ; free physical = 3104 ; free virtual = 6259
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-663] port, pin or net 'get_ports' not found. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/constrs_1/new/constraints.xdc:1]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'wb_clk_i' matched to 'port' objects. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/constrs_1/new/constraints.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+Finished Parsing XDC File [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.srcs/constrs_1/new/constraints.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.113 ; gain = 0.000 ; free physical = 3020 ; free virtual = 6176
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.113 ; gain = 0.000 ; free physical = 3020 ; free virtual = 6175
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3091 ; free virtual = 6246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3091 ; free virtual = 6246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3091 ; free virtual = 6246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'tap_control_state_reg' in module 'fir'
+INFO: [Synth 8-802] inferred FSM for state register 'data_poiter_state_reg' in module 'fir'
+WARNING: [Synth 8-3936] Found unconnected internal register 'r_A_reg' and it is trimmed from '12' to '4' bits. [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/bram11.v:25]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_data_poiter_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1201]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_data_poiter_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1201]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           DPOINTER_IDLE |                               00 |                              000
+      DPOINTER_RST_DBRAM |                               01 |                              001
+         DPOINTER_MOVE_D |                               10 |                              010
+           DPOINTER_WORK |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'data_poiter_state_reg' using encoding 'sequential' in module 'fir'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_data_poiter_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1201]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                          0000001 |                             0000
+                 iSTATE4 |                          0000010 |                             0001
+                  iSTATE |                          0000100 |                             0010
+                 iSTATE0 |                          0001000 |                             0011
+                 iSTATE3 |                          0010000 |                             1001
+                 iSTATE1 |                          0100000 |                             1010
+                 iSTATE2 |                          1000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tap_control_state_reg' using encoding 'one-hot' in module 'fir'
+WARNING: [Synth 8-327] inferring latch for variable 'awready_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:136]
+WARNING: [Synth 8-327] inferring latch for variable 'wready_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:137]
+WARNING: [Synth 8-327] inferring latch for variable 'arready_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:390]
+WARNING: [Synth 8-327] inferring latch for variable 'rvalid_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:391]
+WARNING: [Synth 8-327] inferring latch for variable 'block_pro_idle_reg_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:921]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_w_ap_idle_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:922]
+WARNING: [Synth 8-327] inferring latch for variable 'wskip_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:141]
+WARNING: [Synth 8-327] inferring latch for variable 'block_pro_done_reg_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:919]
+WARNING: [Synth 8-327] inferring latch for variable 'block_pro_done_reg_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:409]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_w_ap_done_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:920]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_w_ap_done_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:457]
+WARNING: [Synth 8-327] inferring latch for variable 'dpoiter_move_dbram_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1293]
+WARNING: [Synth 8-327] inferring latch for variable 'pipe_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1366]
+WARNING: [Synth 8-327] inferring latch for variable 'pipe_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:935]
+WARNING: [Synth 8-327] inferring latch for variable 'pipe_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1367]
+WARNING: [Synth 8-327] inferring latch for variable 'pipe_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:936]
+WARNING: [Synth 8-327] inferring latch for variable 'dpointer_work_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1369]
+WARNING: [Synth 8-327] inferring latch for variable 'dpoiter_rst_dbram_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1195]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_write_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1219]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_write_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:927]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1218]
+WARNING: [Synth 8-327] inferring latch for variable 'small_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:926]
+WARNING: [Synth 8-327] inferring latch for variable 'mid_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:929]
+WARNING: [Synth 8-327] inferring latch for variable 'mid_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:930]
+WARNING: [Synth 8-327] inferring latch for variable 'last_eat_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1194]
+WARNING: [Synth 8-327] inferring latch for variable 'rst_dbram_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:960]
+WARNING: [Synth 8-327] inferring latch for variable 'move_dbram_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1004]
+WARNING: [Synth 8-327] inferring latch for variable 'work_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1016]
+WARNING: [Synth 8-327] inferring latch for variable 'ap_Xn_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1298]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_controller_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:939]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_send_data_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1031]
+WARNING: [Synth 8-327] inferring latch for variable 'ap_Yn_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1041]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_rst_len_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:918]
+WARNING: [Synth 8-327] inferring latch for variable 'sm_tvalid_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:924]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_out_sm_reg_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1375]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_out_sm_reg_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1026]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_data_reg_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:985]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_tap_EN_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1346]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_tap_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1356]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_data_reg_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1352]
+WARNING: [Synth 8-327] inferring latch for variable 'sm_tlast_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:923]
+WARNING: [Synth 8-327] inferring latch for variable 'WorR_mux_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:392]
+WARNING: [Synth 8-327] inferring latch for variable 'WorR_mux_en_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:138]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_tap_WE_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1345]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_tap_A_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1355]
+WARNING: [Synth 8-327] inferring latch for variable 'data_WE_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1213]
+WARNING: [Synth 8-327] inferring latch for variable 'data_EN_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1193]
+WARNING: [Synth 8-327] inferring latch for variable 'data_Di_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1215]
+WARNING: [Synth 8-327] inferring latch for variable 'data_A_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1216]
+WARNING: [Synth 8-327] inferring latch for variable 'fir_rst_dbram_next_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:917]
+WARNING: [Synth 8-327] inferring latch for variable 'dbram_rst_finish_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1190]
+WARNING: [Synth 8-327] inferring latch for variable 'dbram_move_finish_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1191]
+WARNING: [Synth 8-327] inferring latch for variable 'work_finish_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1192]
+WARNING: [Synth 8-327] inferring latch for variable 'tap_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1363]
+WARNING: [Synth 8-327] inferring latch for variable 'tap_counter_start_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:933]
+WARNING: [Synth 8-327] inferring latch for variable 'tap_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1364]
+WARNING: [Synth 8-327] inferring latch for variable 'tap_counter_rst_reg' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:934]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3082 ; free virtual = 6239
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Multipliers : 
+	              32x32  Multipliers := 1     
++---RAMs : 
+	              32K Bit	(1024 X 32 bit)          RAMs := 1     
+	              352 Bit	(11 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 23    
+	   4 Input   32 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 3     
+	   4 Input   12 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 3     
+	   7 Input    7 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 9     
+	   4 Input    5 Bit        Muxes := 3     
+	   7 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 5     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   6 Input    2 Bit        Muxes := 1     
+	   7 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 41    
+	   6 Input    1 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 46    
+	   7 Input    1 Bit        Muxes := 22    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP fir_result_out_reg_out1, operation Mode is: A*B.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: Generating DSP fir_result_out_reg_out1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: Generating DSP fir_result_out_reg_out1, operation Mode is: A*B.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: Generating DSP fir_result_out_reg_out1, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+DSP Report: operator fir_result_out_reg_out1 is absorbed into DSP fir_result_out_reg_out1.
+WARNING: [Synth 8-3332] Sequential element (fir_top/sm_tlast_reg) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[11]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[10]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[9]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[8]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[7]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[6]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[5]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/data_A_reg[4]) is unused and will be removed from module user_project_wrapper.
+WARNING: [Synth 8-3332] Sequential element (fir_top/fir_tap_WE_reg[3]) is unused and will be removed from module user_project_wrapper.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3059 ; free virtual = 6220
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------+------------------+-----------+----------------------+----------------+
+|Module Name          | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++---------------------+------------------+-----------+----------------------+----------------+
+|user_project_wrapper | tap_RAM/RAM_reg  | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|user_project_wrapper | data_RAM/RAM_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
++---------------------+------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2909 ; free virtual = 6070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2897 ; free virtual = 6059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name          | RTL Object             | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|user_project_wrapper | mprj/user_bram/RAM_reg | 1 K x 32(READ_FIRST)   | W |   | 1 K x 32(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
++---------------------+------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------+------------------+-----------+----------------------+----------------+
+|Module Name          | RTL Object       | Inference | Size (Depth x Width) | Primitives     | 
++---------------------+------------------+-----------+----------------------+----------------+
+|user_project_wrapper | tap_RAM/RAM_reg  | Implied   | 16 x 32              | RAM16X1D x 32  | 
+|user_project_wrapper | data_RAM/RAM_reg | Implied   | 16 x 32              | RAM16X1D x 32  | 
++---------------------+------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance mprj/user_bram/RAM_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2898 ; free virtual = 6059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/block_pro_done_reg_en with 1st driver pin 'fir_top/block_pro_done_reg_en_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:409]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/block_pro_done_reg_en with 2nd driver pin 'fir_top/block_pro_done_reg_en_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:919]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/fir_w_ap_done with 1st driver pin 'fir_top/fir_w_ap_done_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:457]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/fir_w_ap_done with 2nd driver pin 'fir_top/fir_w_ap_done_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:920]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/pipe_counter_start with 1st driver pin 'fir_top/pipe_counter_start_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:935]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/pipe_counter_start with 2nd driver pin 'fir_top/pipe_counter_start_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1366]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/pipe_counter_rst with 1st driver pin 'fir_top/pipe_counter_rst_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:936]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/pipe_counter_rst with 2nd driver pin 'fir_top/pipe_counter_rst_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1367]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_write with 1st driver pin 'fir_top/small_counter_write_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:927]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_write with 2nd driver pin 'fir_top/small_counter_write_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1219]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[4] with 1st driver pin 'fir_top/small_counter_rst_reg[4]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[4] with 2nd driver pin 'fir_top/small_counter_rst_reg[4]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[3] with 1st driver pin 'fir_top/small_counter_rst_reg[3]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[3] with 2nd driver pin 'fir_top/small_counter_rst_reg[3]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[2] with 1st driver pin 'fir_top/small_counter_rst_reg[2]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[2] with 2nd driver pin 'fir_top/small_counter_rst_reg[2]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[1] with 1st driver pin 'fir_top/small_counter_rst_reg[1]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[1] with 2nd driver pin 'fir_top/small_counter_rst_reg[1]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[0] with 1st driver pin 'fir_top/small_counter_rst_reg[0]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:928]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_rst[0] with 2nd driver pin 'fir_top/small_counter_rst_reg[0]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1220]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_start with 1st driver pin 'fir_top/small_counter_start_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:926]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/small_counter_start with 2nd driver pin 'fir_top/small_counter_start_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1218]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/fir_out_sm_reg_en with 1st driver pin 'fir_top/fir_out_sm_reg_en_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1026]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/fir_out_sm_reg_en with 2nd driver pin 'fir_top/fir_out_sm_reg_en_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1375]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/WorR_mux_en[1] with 1st driver pin 'fir_top/WorR_mux_en_reg[1]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/WorR_mux_en[1] with 2nd driver pin 'fir_top/WorR_mux_en_reg[1]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:392]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/WorR_mux_en[0] with 1st driver pin 'fir_top/WorR_mux_en_reg[0]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:138]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/WorR_mux_en[0] with 2nd driver pin 'fir_top/WorR_mux_en_reg[0]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:392]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_start with 1st driver pin 'fir_top/tap_counter_start_reg__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:933]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_start with 2nd driver pin 'fir_top/tap_counter_start_reg/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1363]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[3] with 1st driver pin 'fir_top/tap_counter_rst_reg[3]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:934]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[3] with 2nd driver pin 'fir_top/tap_counter_rst_reg[3]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1364]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[2] with 1st driver pin 'fir_top/tap_counter_rst_reg[2]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:934]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[2] with 2nd driver pin 'fir_top/tap_counter_rst_reg[2]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1364]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[1] with 1st driver pin 'fir_top/tap_counter_rst_reg[1]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:934]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[1] with 2nd driver pin 'fir_top/tap_counter_rst_reg[1]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1364]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[0] with 1st driver pin 'fir_top/tap_counter_rst_reg[0]__0/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:934]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin fir_top/tap_counter_rst[0] with 2nd driver pin 'fir_top/tap_counter_rst_reg[0]/Q' [/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/rtl/user/fir.v:1364]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       19|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir         | A*B          | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | A*B          | 17     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|fir         | PCIN>>17+A*B | 0      | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     4|
+|2     |CARRY4   |    34|
+|3     |DSP48E1  |     3|
+|4     |LUT1     |    40|
+|5     |LUT2     |   286|
+|6     |LUT3     |    86|
+|7     |LUT4     |    81|
+|8     |LUT5     |    78|
+|9     |LUT6     |   127|
+|10    |RAM16X1D |    64|
+|11    |RAMB36E1 |     1|
+|12    |FDCE     |   310|
+|13    |FDPE     |    28|
+|14    |FDRE     |    25|
+|15    |LD       |   179|
+|16    |IBUF     |    65|
+|17    |OBUF     |    33|
+|18    |OBUFT    |   131|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2893 ; free virtual = 6054
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 38 critical warnings and 537 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2968.113 ; gain = 0.000 ; free physical = 2959 ; free virtual = 6120
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 2959 ; free virtual = 6120
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.113 ; gain = 0.000 ; free physical = 3053 ; free virtual = 6215
+INFO: [Netlist 29-17] Analyzing 281 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2968.113 ; gain = 0.000 ; free physical = 2994 ; free virtual = 6156
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 243 instances were transformed.
+  LD => LDCE: 176 instances
+  LD => LDCE (inverted pins: G): 3 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 64 instances
+
+Synth Design complete, checksum: 1b805bed
+INFO: [Common 17-83] Releasing license: Synthesis
+43 Infos, 188 Warnings, 38 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 2968.113 ; gain = 64.031 ; free physical = 3223 ; free virtual = 6384
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Horace/caravel-soc_fpga-lab-main/lab-caravel_fir/vivado_SYN/vivado_SYN.runs/synth_1/user_project_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file user_project_wrapper_utilization_synth.rpt -pb user_project_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 16 01:31:36 2023...
