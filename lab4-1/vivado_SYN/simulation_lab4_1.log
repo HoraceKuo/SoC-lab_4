@@ -1,0 +1,20 @@
+
+Reading counter_la_fir.hex
+counter_la_fir.hex loaded into memory
+Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
+VCD info: dumpfile counter_la_fir.vcd opened for output.
+checkbits: data = 43840
+LA Test 1 started
+1 mprj: data =     0
+2 mprj: data = 65526
+3 mprj: data = 65507
+4 mprj: data = 65511
+5 mprj: data =    35
+6 mprj: data =   158
+7 mprj: data =   337
+8 mprj: data =   539
+9 mprj: data =   732
+10 mprj: data =   915
+11 mprj: data =  1098
+checkbits: data = 43857
+LA Test 2 passed
